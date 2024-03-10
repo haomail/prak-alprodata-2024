@@ -1,4 +1,5 @@
 // Program untuk menghitung Luas Area dari suatu lingkaran
+#include <stdio.h>
 #define phi 3.141597
 int main()
 {
