@@ -4,19 +4,19 @@ int power(int n1, int n2);
 int main()
 {
     //Isilah garis kosong dibawah untuk membuat program bekerja
-    int _, _, _;
+    int recursion, n1, n2;
     printf("Enter base number: ");
-    scanf("%d", &_);
+    scanf("%d", &n1);
     printf("Enter power number(positive integer): ");
-    scanf("%d", &_);
-    _ = power(_, _);
-    printf("%d^%d = %d", _, _, _);
+    scanf("%d", &n2);
+    recursion = power(n1, n2);
+    printf("%d^%d = %d", n1, n2, recursion);
     return 0;
     }
-    int power(int _, int _)
-    {
-    if (_ != 0)
-    return (_ * power(_, _ - 1));
+int power(int n1, int n2)
+{
+    if (n2 != 0)
+        return (n1 * power(n1, n2 - 1));
     else
-    return 1;
+        return 1;
 }

@@ -4,33 +4,33 @@ int main()
 {
     // Isilah garis kosong dibawah untuk dapat membuat program bekerja
     int a[100][100];
-    int __, __, __, __;
+    int i, j, m, n;
     /* menentukan banyaknya baris & kolom matriks */
     printf("Matriks berordo m x n \n");
     printf("------------------------\n\n");
     printf("Masukkan banyaknya baris (m): ");
-    scanf("%d", &__);
+    scanf("%d", &m);
     printf("Masukkan banyaknya kolom (n): ");
-    scanf("%d", &__);
+    scanf("%d", &n);
     printf("\n");
     /* input elemen matriks */
-    for (__ = 0; __ < __; __++)
+    for (i = 0; i < m; i++)
     {
-    for (__ = 0; __ < __; __++)
-    {
-    printf("Elemen matrik A[%d %d]: ", __ + 1, __ + 1);
-    scanf("%d", &a[__][__]);
-    }
+        for (j = 0; j < n; j++)
+        {
+        printf("Elemen matrik A[%d %d]: ", i + 1, j + 1);
+        scanf("%d", &a[i][j]);
+        }
     }
     /* menampilkan elemen matriks */
     printf("\n");
     printf("Matriks A = \n");
-    for (__ = 0; __ < __; __++)
+    for (i = 0; i < m; i++)
     {
-    for (__ = 0; __ < __; __++)
-    {
-    printf("%3d", a[__][__]);
-    }
+        for (j = 0; j < n; j++)
+        {
+        printf("%3d", a[i][j]);
+        }
     printf("\n");
     }
 }

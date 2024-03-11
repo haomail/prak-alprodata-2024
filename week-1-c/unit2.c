@@ -4,44 +4,44 @@
 int main()
 {
     //Deklarasikan nama variabel dari nama, keterangan, dan kode serta nilai elemen di dalam char
-    char __ [__], __ [__], __ ;
+    char name[50], desc[32], code;
     printf("Masukkan nama mahasiswa: ");
-    scanf("%s", &__);
+    scanf("%s", &name);
     printf("Pilih kode Program Studi[A / B / C / D] : ");
-    __ = getche();
-    switch (__)
+    code = getche();
+    switch (code)
     {
     case 'A':
-    strcpy(__, "Program Studi Teknik Perkapalan");
+    strcpy(desc, "Program Studi Teknik Perkapalan");
     break;
     case 'B':
-    strcpy(__, "Program Studi Teknik Industri");
+    strcpy(desc, "Program Studi Teknik Industri");
     break;
     case 'C':
-    strcpy(__, "Program Studi Teknik Mesin");
+    strcpy(desc, "Program Studi Teknik Mesin");
     break;
     case 'D':
-    strcpy(__, "Program Studi Teknik Elektro");
+    strcpy(desc, "Program Studi Teknik Elektro");
     break;
     case 'a':
-    strcpy(__, "Program Studi Teknik Perkapalan");
+    strcpy(desc, "Program Studi Teknik Perkapalan");
     break;
     case 'b':
-    strcpy(__, "Program Studi Teknik Industri");
+    strcpy(desc, "Program Studi Teknik Industri");
     break;
     case 'c':
-    strcpy(__, "Program Studi Teknik Mesin");
+    strcpy(desc, "Program Studi Teknik Mesin");
     break;
     case 'd':
-    strcpy(__, "Program Studi Teknik Elektro");
+    strcpy(desc, "Program Studi Teknik Elektro");
     break;
     default:
-    strcpy(__, "Program Studi Tidak Ditemukan");
+    strcpy(desc, "Program Studi Tidak Ditemukan");
     break;
     }
-    printf("\n\nNama Mahasiswa: %s \n", __);
-    printf("Kode Program Studi: %c \n", __);
-    printf("Nama Program Studi: %s \n", __);
+    printf("\n\nNama Mahasiswa: %s \n", name);
+    printf("Kode Program Studi: %c \n", code);
+    printf("Nama Program Studi: %s \n", desc);
     getch();
     return 0;
 }
