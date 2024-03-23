@@ -13,4 +13,4 @@ def hasil_fungsi(himpunan):
         hasil.append((i**2)+(2*i)+1)
     return hasil
 
-print(f"Nilai kuadrat fungsi adalah {hasil_fungsi(buat_himpunan_interval(1,5))}")
+print(f"Nilai kuadrat fungsi adalah {hasil_fungsi(buat_himpunan_interval(1,10))}")

@@ -2,7 +2,7 @@
 # Memetakan nilai x pada interval [1,10] ke dalam fungsi Y(X) = (x^3) + 1
 
 # Membuat list kosong berisi himpunan 1-10
-x = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #x = range(1,11)
 # Membuat list kosong dari Y
 y = []

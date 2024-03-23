@@ -1,6 +1,7 @@
 import sympy as sym
 t = sym.symbols('t')
-s = sym.symbols('s')
-fungsi = 3*t**2
-fungsi_laplace = sym.laplace_transform(fungsi, t, s, noconds = True)
-fungsi_laplace
+a = sym.symbols('a', positive=True)
+k = sym.symbols('k')
+fungsi = sym.exp(-a*t)*sym.Heaviside(t)
+fungsi_fourier = sym.fourier_transform(fungsi, t, k)
+fungsi_fourier
